@@ -64,7 +64,7 @@ export default function App() {
               </svg>
             </div>
             <span className="font-display font-bold text-[17px] tracking-tight text-white">
-              resume<span style={{ color: '#818cf8' }}>ai</span>
+              <span style={{ color: '#818cf8' }}>AI</span> Resume Analyzer
             </span>
           </div>
 
@@ -75,8 +75,8 @@ export default function App() {
               </button>
             )}
             <span className="hidden sm:flex items-center gap-1.5 text-[11px] font-display font-700 text-[rgba(226,228,240,0.3)] tracking-widest uppercase">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#34d399] inline-block" style={{ boxShadow: '0 0 6px #34d399' }} />
-              Free · No signup
+              {/* <span className="w-1.5 h-1.5 rounded-full bg-[#34d399] inline-block" style={{ boxShadow: '0 0 6px #34d399' }} /> */}
+            
             </span>
           </div>
         </div>
@@ -87,13 +87,13 @@ export default function App() {
         {/* Hero */}
         {!result && !loading && (
           <div className="text-center pt-6 pb-14 animate-fade-up">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-8 border"
-              style={{ background: 'rgba(99,102,241,0.08)', borderColor: 'rgba(99,102,241,0.25)' }}>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#818cf8]" style={{ boxShadow: '0 0 6px #818cf8' }} />
-              <span className="font-display font-700 text-[11px] tracking-[0.1em] uppercase text-[#a5b4fc]">
+            {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-8 border" */}
+              {/* style={{ background: 'rgba(99,102,241,0.08)', borderColor: 'rgba(99,102,241,0.25)' }}> */}
+              {/* <span className="w-1.5 h-1.5 rounded-full bg-[#818cf8]" style={{ boxShadow: '0 0 6px #818cf8' }} /> */}
+              {/* <span className="font-display font-700 text-[11px] tracking-[0.1em] uppercase text-[#a5b4fc]">
                 Powered by Gemini AI
-              </span>
-            </div>
+              </span> */}
+            {/* </div> */}
 
             <h1 className="font-display font-bold leading-[1.05] mb-6 tracking-tight"
               style={{ fontSize: 'clamp(38px, 6.5vw, 72px)' }}>
@@ -165,13 +165,7 @@ export default function App() {
         )}
       </main>
 
-      {/* Footer */}
-      <footer className="text-center py-7 relative z-10"
-        style={{ borderTop: '1px solid rgba(99,102,241,0.08)' }}>
-        <p className="font-display text-[11px] tracking-widest uppercase" style={{ color: 'rgba(226,228,240,0.2)' }}>
-          Built with React · Tailwind CSS · Gemini AI
-        </p>
-      </footer>
+      
     </div>
   )
 }
